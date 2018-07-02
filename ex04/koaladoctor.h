@@ -8,6 +8,7 @@ class KoalaDoctor
 {
     private:
 	std::string name;
+	bool isWork;
     public:
 	KoalaDoctor(std::string str);
 	void diagnose(SickKoala *patient);
