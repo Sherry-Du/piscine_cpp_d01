@@ -1,33 +1,32 @@
 #include <fstream>
 #include <string>
 #include <iostream>
-using namespace std;
 
-void my_cat(string file)
+void my_cat(std::string file)
 {
   
-    ifstream infile; 
+    std::ifstream infile; 
     infile.open(file.data());
     int a = infile.is_open();
     if(a == 0)
     {
-        cout<<"my_cat: "<<file<<": No such file or directory"<<endl;
+        std::cout<<"my_cat: "<<file<<": No such file or directory"<<std::endl;
         return ;
     }
-    string s;
+    std::string s;
     while(getline(infile,s))
     {
-        cout<<s<<endl;
+        std::cout<<s<<std::endl;
     }
     infile.close();
 }
 
 int main(int argc, char *argv[])
 {
-    string str;
+    std::string str;
     if(argc <= 1)
     {
-        cout<<"my_cat: Usage : ./my_cat file [...]"<<endl;
+        std::cout<<"my_cat: Usage : ./my_cat file [...]"<<std::endl;
     }
     for (int i = 1; i < argc; i++)
     {
