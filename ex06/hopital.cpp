@@ -1,5 +1,13 @@
 #include "hopital.h"
 
+Hospital::Hospital()
+{
+}
+
+Hospital::~Hospital()
+{
+}
+
 void Hospital::addDoctor(KoalaDoctorList *doc)
 {
   

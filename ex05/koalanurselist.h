@@ -11,6 +11,7 @@ class KoalaNurseList
 	KoalaNurseList *next;
     public:
 	KoalaNurseList(KoalaNurse *ptr);
+	~KoalaNurseList();
 	bool isEnd();
 	void append(KoalaNurseList *ptr);
 	KoalaNurse *getFromID(int id);

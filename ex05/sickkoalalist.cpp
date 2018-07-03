@@ -10,6 +10,11 @@ SickKoalaList::SickKoalaList(SickKoala *sk)
     this->next = NULL;
 }
 
+SickKoalaList::~SickKoalaList(SickKoala *sk)
+{
+}
+
+
 bool SickKoalaList::isEnd()
 {
     return (this->next == NULL);

@@ -10,6 +10,10 @@ KoalaDoctorList::KoalaDoctorList(KoalaDoctor *ptr)
     this->next = NULL;
 }
 
+KoalaDoctorList::~KoalaDoctorList()
+{
+}
+
 bool KoalaDoctorList::isEnd()
 {
     return (this->next == NULL);

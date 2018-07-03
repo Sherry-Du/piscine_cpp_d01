@@ -11,6 +11,7 @@ class KoalaDoctorList
 	KoalaDoctorList *next;
     public:
 	KoalaDoctorList(KoalaDoctor *ptr);
+	~KoalaDoctorList();
 	bool isEnd();
 	void append(KoalaDoctorList *ptr);
 	KoalaDoctor *getFromName(std::string name);

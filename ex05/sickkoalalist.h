@@ -11,6 +11,7 @@ class SickKoalaList
 	SickKoalaList *next;
     public:
 	SickKoalaList(SickKoala *sk);
+	~SickKoalaList(SickKoala *sk);
   	bool isEnd();
   	void append(SickKoalaList *skl);
   	SickKoala *getFromName(std::string name);

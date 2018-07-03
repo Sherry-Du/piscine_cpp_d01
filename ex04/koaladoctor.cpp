@@ -10,6 +10,10 @@ KoalaDoctor::KoalaDoctor(std::string str)
     std::cout<<"Dr."<<this->name<<": Je suis le Dr."<<this->name<<"! Comment Kreoggez-vous ?"<<std::endl;
 }
 
+KoalaDoctor::~KoalaDoctor()
+{
+}
+
 void KoalaDoctor::diagnose(SickKoala *patient)
 {
     std::cout<<"Dr."<<this->name<<": Alors qu’est-ce qui vous goerk Mr."

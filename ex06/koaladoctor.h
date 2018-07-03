@@ -11,6 +11,7 @@ class KoalaDoctor
 	bool isWork;
     public:
 	KoalaDoctor(std::string str);
+	~KoalaDoctor()
 	void diagnose(SickKoala *patient);
 	void timeCheck();
 	std::string getName();
