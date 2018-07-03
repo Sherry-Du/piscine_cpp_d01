@@ -27,8 +27,8 @@ void my_convert_temp()
         f = c2f(input);
         std::cout<<std::setfill(' ')<<std::setw(16)
 	    <<std::setiosflags(std::ios::fixed)
-	    <<std::setprecision(3)
-	    <<f<<" Fahrenheit"<<std::endl;
+	    <<std::setprecision(3)<<f<<std::setfill(' ')
+	    <<std::setw(16)<<"Fahrenheit"<<std::endl;
     }
     else if(type == "Fahrenheit")
     {
@@ -36,7 +36,8 @@ void my_convert_temp()
         std::cout<<std::setfill(' ')<<std::setw(16)
 	    <<std::setiosflags(std::ios::fixed)
 	    <<std::setprecision(3)
-	    <<c<<" Celsius"<<std::endl;
+	    <<c<<std::setfill(' ')
+	    <<std::setw(16)<<"Celsius"<<std::endl;
     }
     else
     {
