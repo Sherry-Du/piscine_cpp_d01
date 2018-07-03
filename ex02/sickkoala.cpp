@@ -29,7 +29,7 @@ bool SickKoala::takeDrug(std::string str)
     else 
     {
 	std::string result = "";
-	for (int i = 0; i < str.length(); i++) 
+	for (size_t i = 0; i < str.length(); i++) 
 	{
 	    str[i] = tolower(str[i]);
 	    result += str[i];
@@ -56,7 +56,7 @@ void SickKoala::overDrive(std::string str)
     while(input>>result)
 	res.push_back(result);
     std::cout<<"Mr."<<name<<": ";
-    for(int i = 0; i < res.size(); i++){
+    for(size_t i = 0; i < res.size(); i++){
 	if(res[i]=="Kreog" && res[i+1]=="!")
 	    std::cout<<repl<<" ";
 	else if(i == (res.size() - 1))
@@ -65,4 +65,5 @@ void SickKoala::overDrive(std::string str)
 	    std::cout<<res[i]<<" ";
     }
 }
+
 
